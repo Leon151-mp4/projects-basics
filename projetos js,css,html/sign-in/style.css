@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(Black\ Ocean.jpg);
+  background-image: url('Black Ocean.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -19,37 +19,232 @@ body {
   justify-content: center;
   align-items: center;
 
-  border-color: black;
   border: 1px solid #ccc;
-  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(7.5px);
+  background-color: rgba(255, 255, 255, 0.123);
   box-sizing: border-box;
-  height: 502px;
+  height: 550px;
   width: 402px;
+
   border-radius: 50px;
-  box-shadow: 0px 1px 7px 4px;
+  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 100px;
 }
 
-.name{
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    left: 502px;
-    right: 50px;
+.name {
+  margin: 25px 10px 10px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
 }
 
-.Email{
-    margin: 10px;
+.Email {
+  margin: 25px 10px 10px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
 }
 
-.password{
-  margin: 10px;
+.password {
+  margin: 25px 10px 10px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
 }
 
-.repeat{
-  margin: 10px;
+.repeat {
+  margin: 25px 10px 10px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
 }
-.button{
-  margin: 10px;
+
+.button {
+  margin: 25px 10px 10px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
+}
+
+#Nme {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 45px;
+  width: 30vh;
+  outline: none;
+
+  padding-inline: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  color: white;
+}
+
+#Email2 {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 45px;
+  width: 30vh;
+  outline: none;
+
+  padding-inline: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  color: white;
+}
+
+#password1 {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 45px;
+  width: 30vh;
+  outline: none;
+
+  padding-inline: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  color: white;
+}
+
+#password2 {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 45px;
+  width: 30vh;
+  outline: none;
+
+  padding-inline: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  color: white;
+}
+
+#Nme:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#Email2:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+#password1:focus{
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#password2:focus{
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+#text {
+  position: absolute;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  pointer-events: none;
+
+  pointer-events: none;
+  transition: 0.6s ease 0.1s;
+}
+
+#Email1{
+  position: absolute;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  pointer-events: none;
+
+  pointer-events: none;
+  transition: 0.6s ease 0.1s;
+}
+
+#Password{
+   position: absolute;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  pointer-events: none;
+  
+  pointer-events: none;
+  transition: 0.6s ease 0.1s;
+}
+
+#repeat{
+  position: absolute;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  pointer-events: none;
+  
+  pointer-events: none;
+  transition: 0.6s ease 0.1s;
+}
+
+
+#btn {
+  border-radius: 20px;
+  width: 155px;
+  height: 55px;
+  font-size: 20px;
+  background-color: white;
+  transition: 0.4s ease 0.1s;
+}
+
+.errorText{
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+}
+
+
+
+
+#Nme:hover + #text,
+#Nme:focus + #text,
+#Nme:not(:placeholder-shown) + #text {
+  transform: translateY(-19px) translateX(-10px) scale(0.6);
+}
+
+#Email2:hover + #Email1,
+#Email2:focus + #Email1,
+ #Email2:not(:placeholder-shown) + #Email1{
+  transform: translateY(-19px) translateX(-10px) scale(0.6);
+}
+
+#password1:hover + #Password,
+#password1:focus + #Password,
+ #password1:not(:placeholder-shown) + #Password{
+    transform: translateY(-19px) translateX(-10px) scale(0.6);
+
+}
+
+#password2:hover + #repeat,
+#password2:focus + #repeat,
+#password2:not(:placeholder-shown) + #repeat{
+      transform: translateY(-19px) translateX(-10px) scale(0.6);
+
+}
+
+
+#hlabel {
+  color: white;
+  font-size: 40px;
+}
+
+#btn:hover {
+  width: 380px;
+  height: 75px;
+  border-radius: 50px;
+  background-color: gray;
+  transform: translateY(10px);
+  color: white;
 }
